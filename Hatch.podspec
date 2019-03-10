@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Hatch"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Hatch custom alerts."
   spec.homepage    = "https://github.com"
   spec.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "10.0"
   spec.swift_version = "4.2"
 
-  spec.source_files = "Source/*.swift"
+  spec.source_files = 'Source/*.swift'
 
   spec.dependency 'SnapKit'
 

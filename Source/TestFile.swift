@@ -22,3 +22,9 @@
 // THE SOFTWARE.
 
 import Foundation
+
+class TestFile {
+    func test() {
+        print(1)
+    }
+}
