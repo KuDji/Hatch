@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80F82C1C22353855008D579F /* Hatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F82C1A22353855008D579F /* Hatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80FC87802235401D00C77039 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC877F2235401D00C77039 /* TestFile.swift */; };
 		B946D76389B56F1CAE22FF33 /* Pods_Hatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A973E183EFB4CA9B28183C /* Pods_Hatch.framework */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +16,7 @@
 		80F82C1722353855008D579F /* Hatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F82C1A22353855008D579F /* Hatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hatch.h; sourceTree = "<group>"; };
 		80F82C1B22353855008D579F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FC877F2235401D00C77039 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		95346FD72F3A6F860F2B7AF7 /* Pods-Hatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hatch.debug.xcconfig"; path = "Target Support Files/Pods-Hatch/Pods-Hatch.debug.xcconfig"; sourceTree = "<group>"; };
 		A937BAC927A9938E29E81815 /* Pods-Hatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hatch.release.xcconfig"; path = "Target Support Files/Pods-Hatch/Pods-Hatch.release.xcconfig"; sourceTree = "<group>"; };
 		D6A973E183EFB4CA9B28183C /* Pods_Hatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				80F82C1A22353855008D579F /* Hatch.h */,
+				80FC877F2235401D00C77039 /* TestFile.swift */,
 				80F82C1B22353855008D579F /* Info.plist */,
 			);
 			path = Hatch;
@@ -120,6 +123,7 @@
 				TargetAttributes = {
 					80F82C1622353855008D579F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -180,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FC87802235401D00C77039 /* TestFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +250,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -302,6 +308,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -312,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95346FD72F3A6F860F2B7AF7 /* Pods-Hatch.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -329,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AMProgrammer.Hatch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A937BAC927A9938E29E81815 /* Pods-Hatch.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
