@@ -12,8 +12,10 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/KuDji/Hatch.git', :tag => spec.version }
 
   spec.ios.deployment_target = "10.0"
+  spec.swift_version = "4.2"
 
-  spec.source_files = 'Hatch/*.swift'
+  spec.source_files = "Source/*.swift"
+
   spec.dependency 'SnapKit'
 
 end
