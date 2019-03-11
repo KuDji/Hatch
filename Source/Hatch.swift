@@ -46,14 +46,17 @@ open class Hatch {
     
     // MARK: - Init
     
-    public init(bench: HatchBench, closeMark: HatchCloseMark, configuraction: HatchConfigurator, onView: UIView) {
+    public init(bench: HatchBench, closeMark: HatchCloseMark? = nil, configuraction: HatchConfigurator, onView: UIView) {
         self.bench = bench
         self.config = configuraction
         self.parentView = onView
         
         setupBackgroundBlurView(configuraction: configuraction, view: onView)
         setup(bench)
-        setup(closeMark)
+        
+        if let closeMark = closeMark {
+            setup(closeMark)
+        }
     }
     
     // MARK: - Presentation
