@@ -1,5 +1,5 @@
 //
-//  TestFile.swift
+// HatchConfigurator.swift
 //
 // Copyright (c) 2019 Anatoliy Morozov
 //
@@ -21,10 +21,30 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import UIKit
 
-class TestFile {
-    func test() {
-        print(1)
+public final class HatchConfigurator {
+    
+    // MARK: - Parametrs
+    
+    var backgroundColor = UIColor.black.withAlphaComponent(0.7)
+    
+    var font = UIFont.systemFont(ofSize: 18)
+    
+    var closeMarkIsOn = true
+    
+    // MARK: - EdgeInsets Parametrs
+    
+    var inBoundsInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    
+    init(backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.7),
+         font: UIFont = UIFont.systemFont(ofSize: 18),
+         closeMarkIsOn: Bool = true,
+         inBoundsInsets: UIEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20))
+    {
+        self.backgroundColor = backgroundColor
+        self.font = font
+        self.closeMarkIsOn = closeMarkIsOn
+        self.inBoundsInsets = inBoundsInsets
     }
 }

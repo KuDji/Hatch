@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806A6A8D2236369300046178 /* HatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A852236369200046178 /* HatchButton.swift */; };
+		806A6A8E2236369300046178 /* Hatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A862236369200046178 /* Hatch.swift */; };
+		806A6A8F2236369300046178 /* HatchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A872236369200046178 /* HatchConfigurator.swift */; };
+		806A6A902236369300046178 /* HatchElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A882236369200046178 /* HatchElementProtocol.swift */; };
+		806A6A912236369300046178 /* HatchCloseMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A892236369200046178 /* HatchCloseMark.swift */; };
+		806A6A922236369300046178 /* HatchBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A8A2236369200046178 /* HatchBench.swift */; };
+		806A6A932236369300046178 /* HatchLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A8B2236369300046178 /* HatchLabel.swift */; };
+		806A6A942236369300046178 /* HatchUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A8C2236369300046178 /* HatchUIImageView.swift */; };
 		80F82C1C22353855008D579F /* Hatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F82C1A22353855008D579F /* Hatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80FC87802235401D00C77039 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC877F2235401D00C77039 /* TestFile.swift */; };
 		B946D76389B56F1CAE22FF33 /* Pods_Hatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A973E183EFB4CA9B28183C /* Pods_Hatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		806A6A852236369200046178 /* HatchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchButton.swift; sourceTree = "<group>"; };
+		806A6A862236369200046178 /* Hatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hatch.swift; sourceTree = "<group>"; };
+		806A6A872236369200046178 /* HatchConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchConfigurator.swift; sourceTree = "<group>"; };
+		806A6A882236369200046178 /* HatchElementProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchElementProtocol.swift; sourceTree = "<group>"; };
+		806A6A892236369200046178 /* HatchCloseMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchCloseMark.swift; sourceTree = "<group>"; };
+		806A6A8A2236369200046178 /* HatchBench.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchBench.swift; sourceTree = "<group>"; };
+		806A6A8B2236369300046178 /* HatchLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchLabel.swift; sourceTree = "<group>"; };
+		806A6A8C2236369300046178 /* HatchUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchUIImageView.swift; sourceTree = "<group>"; };
 		80F82C1722353855008D579F /* Hatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F82C1A22353855008D579F /* Hatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hatch.h; sourceTree = "<group>"; };
 		80F82C1B22353855008D579F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80FC877F2235401D00C77039 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		95346FD72F3A6F860F2B7AF7 /* Pods-Hatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hatch.debug.xcconfig"; path = "Target Support Files/Pods-Hatch/Pods-Hatch.debug.xcconfig"; sourceTree = "<group>"; };
 		A937BAC927A9938E29E81815 /* Pods-Hatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hatch.release.xcconfig"; path = "Target Support Files/Pods-Hatch/Pods-Hatch.release.xcconfig"; sourceTree = "<group>"; };
 		D6A973E183EFB4CA9B28183C /* Pods_Hatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +79,14 @@
 			isa = PBXGroup;
 			children = (
 				80F82C1A22353855008D579F /* Hatch.h */,
-				80FC877F2235401D00C77039 /* TestFile.swift */,
+				806A6A862236369200046178 /* Hatch.swift */,
+				806A6A8A2236369200046178 /* HatchBench.swift */,
+				806A6A852236369200046178 /* HatchButton.swift */,
+				806A6A892236369200046178 /* HatchCloseMark.swift */,
+				806A6A872236369200046178 /* HatchConfigurator.swift */,
+				806A6A882236369200046178 /* HatchElementProtocol.swift */,
+				806A6A8B2236369300046178 /* HatchLabel.swift */,
+				806A6A8C2236369300046178 /* HatchUIImageView.swift */,
 				80F82C1B22353855008D579F /* Info.plist */,
 			);
 			name = Hatch;
@@ -185,7 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80FC87802235401D00C77039 /* TestFile.swift in Sources */,
+				806A6A912236369300046178 /* HatchCloseMark.swift in Sources */,
+				806A6A8E2236369300046178 /* Hatch.swift in Sources */,
+				806A6A8F2236369300046178 /* HatchConfigurator.swift in Sources */,
+				806A6A932236369300046178 /* HatchLabel.swift in Sources */,
+				806A6A922236369300046178 /* HatchBench.swift in Sources */,
+				806A6A942236369300046178 /* HatchUIImageView.swift in Sources */,
+				806A6A8D2236369300046178 /* HatchButton.swift in Sources */,
+				806A6A902236369300046178 /* HatchElementProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +356,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Hatch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,7 +384,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Hatch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
