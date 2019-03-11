@@ -24,7 +24,7 @@
 import UIKit
 import SnapKit
 
-public final class Hatch {
+open class Hatch {
     
     // MARK: - Variable
     
@@ -46,7 +46,7 @@ public final class Hatch {
     
     // MARK: - Init
     
-    init(bench: HatchBench, closeMark: HatchCloseMark, configuraction: HatchConfigurator, onView: UIView) {
+    public init(bench: HatchBench, closeMark: HatchCloseMark, configuraction: HatchConfigurator, onView: UIView) {
         self.bench = bench
         self.config = configuraction
         self.parentView = onView
@@ -58,7 +58,7 @@ public final class Hatch {
     
     // MARK: - Presentation
     
-    func present() {
+    open func present() {
         guard let parent = parentView else { return }
         if let backgroundView = backgroundView {
             parent.addSubview(backgroundView)
@@ -81,7 +81,7 @@ public final class Hatch {
     
     // MARK: - Adding new Elements
     
-    func addLabel(_ hatcnLabel: HatchLabel) {
+    open func addLabel(_ hatcnLabel: HatchLabel) {
         let label = UILabel()
         label.text = hatcnLabel.text
         label.font = hatcnLabel.font
@@ -110,7 +110,7 @@ public final class Hatch {
         increaseBatchHeight(textHeight + hatcnLabel.edgeInset.bottom)
     }
     
-    func addImage(_ hatchImage: HatchUIImageView) {
+    open func addImage(_ hatchImage: HatchUIImageView) {
         let image = UIImageView(image: hatchImage.image)
         batchView?.addSubview(image)
         
@@ -131,7 +131,7 @@ public final class Hatch {
         increaseBatchHeight(hatchImage.size.height + hatchImage.edgeInset.bottom)
     }
     
-    func addButton(_ hatchButton: HatchButton) {
+    open func addButton(_ hatchButton: HatchButton) {
         let button = UIButton()
         button.addTarget(nil, action: hatchButton.action, for: .touchUpInside)
         button.setTitle(hatchButton.text, for: UIControl.State())

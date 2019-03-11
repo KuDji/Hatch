@@ -23,7 +23,7 @@
 
 import UIKit
 
-public final class HatchLabel: HatchElementProtocol {
+open class HatchLabel: HatchElementProtocol {
     
     var text: String
     
@@ -35,7 +35,7 @@ public final class HatchLabel: HatchElementProtocol {
     
     var edgeInset: UIEdgeInsets
     
-    init(text: String,
+    public init(text: String,
          font: UIFont = UIFont.systemFont(ofSize: 18),
          color: UIColor = UIColor.white,
          lines: Int = 0,

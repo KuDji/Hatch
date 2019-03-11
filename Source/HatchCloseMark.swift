@@ -23,9 +23,9 @@
 
 import UIKit
 
-public final class HatchCloseMark: HatchElementProtocol {
+open class HatchCloseMark: HatchElementProtocol {
     
-    enum Position {
+    public enum Position {
         case topLeft
         case topRight
         case bottomLeft
@@ -40,7 +40,7 @@ public final class HatchCloseMark: HatchElementProtocol {
     
     var position: HatchCloseMark.Position
     
-    init(image: UIImage?,
+    public init(image: UIImage?,
          size: CGSize,
          edgeInset: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0),
          position: HatchCloseMark.Position = .topRight)

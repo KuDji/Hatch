@@ -23,7 +23,7 @@
 
 import UIKit
 
-public final class HatchUIImageView: HatchElementProtocol {
+open class HatchUIImageView: HatchElementProtocol {
     
     var image: UIImage?
     
@@ -31,7 +31,7 @@ public final class HatchUIImageView: HatchElementProtocol {
     
     var edgeInset: UIEdgeInsets
     
-    init(image: UIImage?,
+    public init(image: UIImage?,
          size: CGSize,
          edgeInset: UIEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20))
     {

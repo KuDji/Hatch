@@ -23,7 +23,7 @@
 
 import UIKit
 
-public final class HatchBench: HatchElementProtocol {
+open class HatchBench: HatchElementProtocol {
     
     var color: UIColor
     
@@ -33,7 +33,7 @@ public final class HatchBench: HatchElementProtocol {
     
     var edgeInset: UIEdgeInsets
     
-    init(sizeWidth: CGFloat,
+    public init(sizeWidth: CGFloat,
          color: UIColor = UIColor.white,
          cornerRadius: CGFloat = 14,
          edgeInset: UIEdgeInsets = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0))

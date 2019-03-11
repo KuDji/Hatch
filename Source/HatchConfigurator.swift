@@ -23,7 +23,7 @@
 
 import UIKit
 
-public final class HatchConfigurator {
+open class HatchConfigurator {
     
     // MARK: - Parametrs
     
@@ -37,7 +37,7 @@ public final class HatchConfigurator {
     
     var inBoundsInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
-    init(backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.7),
+    public init(backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.7),
          font: UIFont = UIFont.systemFont(ofSize: 18),
          closeMarkIsOn: Bool = true,
          inBoundsInsets: UIEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20))

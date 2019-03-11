@@ -23,7 +23,7 @@
 
 import UIKit
 
-public final class HatchButton: HatchElementProtocol {
+open class HatchButton: HatchElementProtocol {
     
     var text: String
     
@@ -41,7 +41,7 @@ public final class HatchButton: HatchElementProtocol {
     
     var action: Selector
     
-    init(text: String,
+    public init(text: String,
          font: UIFont = UIFont.systemFont(ofSize: 18),
          textColor: UIColor = UIColor.white,
          backgroundColor: UIColor = UIButton().tintColor,
