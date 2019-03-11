@@ -68,7 +68,8 @@
 				80FC877F2235401D00C77039 /* TestFile.swift */,
 				80F82C1B22353855008D579F /* Info.plist */,
 			);
-			path = Hatch;
+			name = Hatch;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		F7C6A2C7D00E5B1A7B8A1D6D /* Frameworks */ = {
