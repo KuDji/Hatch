@@ -1,4 +1,4 @@
-[![CocoaPods Compatible](https://img.shields.io/badge/pod-v.1.0.4-orange.svg)](https://img.shields.io/badge/pod-v.1.0.6-orange.svg)
+[![CocoaPods Compatible](https://img.shields.io/badge/pod-v.1.0.4-orange.svg)](https://img.shields.io/badge/pod-v.1.0.8-orange.svg)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat)](https://img.shields.io/badge/platform-ios-lightgrey.svg)
 [![Twitter](https://img.shields.io/badge/twitter-KuDji-blue.svg?style=flat)](https://twitter.com/KuDjij)
 

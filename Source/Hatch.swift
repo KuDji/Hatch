@@ -82,6 +82,10 @@ open class Hatch {
         backgroundView?.removeFromSuperview()
     }
     
+    open func removeHatch() {
+        remove()
+    }
+    
     // MARK: - Adding new Elements
     
     open func addLabel(_ hatcnLabel: HatchLabel) {
