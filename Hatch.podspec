@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.name         = "Hatch"
   spec.version      = "1.0.1"
   spec.summary      = "Hatch custom alerts."
-  spec.homepage    = "https://github.com"
+  spec.homepage     = "https://github.com/KuDji/Hatch"
   spec.description  = <<-DESC
 			Modeling rhino style Alerts
                    DESC
