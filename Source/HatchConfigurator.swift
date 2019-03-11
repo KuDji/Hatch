@@ -31,20 +31,16 @@ open class HatchConfigurator {
     
     var font = UIFont.systemFont(ofSize: 18)
     
-    var closeMarkIsOn = true
-    
     // MARK: - EdgeInsets Parametrs
     
     var inBoundsInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
     public init(backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.7),
          font: UIFont = UIFont.systemFont(ofSize: 18),
-         closeMarkIsOn: Bool = true,
          inBoundsInsets: UIEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20))
     {
         self.backgroundColor = backgroundColor
         self.font = font
-        self.closeMarkIsOn = closeMarkIsOn
         self.inBoundsInsets = inBoundsInsets
     }
 }
