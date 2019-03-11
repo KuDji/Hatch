@@ -56,4 +56,8 @@ func presentHatch() {
 }
 ```
 
-and
+## License
+`Hatch` is released under the MIT license. Check `LICENSE.md` for details.
+
+## Contact
+If you need to contact my [tweeter](https://twitter.com/KuDjij)
