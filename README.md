@@ -24,10 +24,9 @@ Form a alert with the title, image and button:
 
 ```swift
 
-    var hatch: Hatch!
+var hatch: Hatch!
 
 func presentHatch() {
-    super.viewDidAppear(animated)
     let batchViewWidth: CGFloat = 300
     let titleText = "Title Text Example!"
     let textColor = UIColor.black
