@@ -61,11 +61,15 @@ open class Hatch {
     
     // MARK: - Presentation
     
-    open func present() {
+    open func present(removeView: Selector = #selector(remove), selectorClass: Any? = nil) {
         guard let parent = parentView else { return }
         if let backgroundView = backgroundView {
             parent.addSubview(backgroundView)
-            backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(remove)))
+            if selectorClass == nil {
+                backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: removeView))
+            } else {
+                backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: selectorClass, action: removeView))
+            }
             addConstraintBackgroundBlurView()
         }
         if let batchView = batchView {
@@ -73,7 +77,11 @@ open class Hatch {
             addConstraintBatchView()
         }
         if let closeMarkImage = closeMarkImage {
-            closeMarkImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(remove)))
+            if selectorClass == nil {
+                closeMarkImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: removeView))
+            } else {
+                closeMarkImage.addGestureRecognizer(UITapGestureRecognizer(target: selectorClass, action: removeView))
+            }
         }
     }
     
