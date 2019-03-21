@@ -169,7 +169,74 @@ open class Hatch {
         }
         
         previousElement = button
-        increaseBatchHeight(hatchButton.height + hatchButton.edgeInset.bottom )
+        increaseBatchHeight(hatchButton.height + hatchButton.edgeInset.bottom)
+    }
+    
+    open func addImageButton(_ hatchButton: HatchImageButton) {
+        let button = createButton(from: hatchButton)
+        batchView?.addSubview(button)
+        
+        button.snp.makeConstraints { make in
+            if let previousElement = previousElement {
+                make.top.equalTo(previousElement.snp.bottom).offset(hatchButton.edgeInset.top)
+            } else {
+                make.top.equalToSuperview().offset(hatchButton.edgeInset.top)
+            }
+            make.centerX.equalTo(batchView!)
+            make.height.equalTo(hatchButton.size.height)
+            make.width.equalTo(hatchButton.size.width)
+        }
+        
+        previousElement = button
+        increaseBatchHeight(hatchButton.size.height + hatchButton.edgeInset.bottom)
+    }
+    
+    open func addImageButton(contentOf hatchButtons: [HatchImageButton]) {
+        
+        let stackWidth = hatchButtons
+            .map { imageButton -> CGFloat in
+                return imageButton.size.width + imageButton.edgeInset.left + imageButton.edgeInset.right
+            }.reduce(0.0, +)
+        
+        var startPoint: CGFloat = -(stackWidth/2)
+        var stackPosition: [CGFloat] = []
+        
+        hatchButtons.forEach { imageButton in
+            let imageCenter = imageButton.size.width/2
+            let buttonPosition = startPoint + imageButton.edgeInset.left + imageCenter
+            stackPosition.append(buttonPosition)
+            startPoint += imageButton.size.width + imageButton.edgeInset.left + imageButton.edgeInset.right
+        }
+        
+        for i in 0..<hatchButtons.count {
+            let button = createButton(from: hatchButtons[i])
+            batchView?.addSubview(button)
+            
+            button.snp.makeConstraints { make in
+                if let previousElement = previousElement {
+                    make.top.equalTo(previousElement.snp.bottom).offset(hatchButtons[i].edgeInset.top)
+                } else {
+                    make.top.equalToSuperview().offset(hatchButtons[i].edgeInset.top)
+                }
+                make.centerX.equalToSuperview().offset(stackPosition[i])
+                make.height.equalTo(hatchButtons[i].size.height)
+                make.width.equalTo(hatchButtons[i].size.width)
+            }
+            
+            if i == hatchButtons.count-1 {
+                previousElement = button
+                increaseBatchHeight(hatchButtons[i].size.height + hatchButtons[i].edgeInset.bottom)
+            }
+        }
+    }
+    
+    private func createButton(from hatchButton: HatchImageButton) -> UIButton {
+        let button = UIButton()
+        button.addTarget(nil, action: hatchButton.action, for: .touchUpInside)
+        button.setTitle("", for: UIControl.State())
+        button.setImage(hatchButton.image, for: UIControl.State.normal)
+        button.imageEdgeInsets = hatchButton.inBoundsEdgeInsets
+        return button
     }
     
     // MARK: - Setup backgrounds

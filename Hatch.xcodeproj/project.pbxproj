@@ -15,6 +15,7 @@
 		806A6A922236369300046178 /* HatchBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A8A2236369200046178 /* HatchBench.swift */; };
 		806A6A932236369300046178 /* HatchLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A8B2236369300046178 /* HatchLabel.swift */; };
 		806A6A942236369300046178 /* HatchUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A6A8C2236369300046178 /* HatchUIImageView.swift */; };
+		80C4C3882243A10900D0F447 /* HatchImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4C3872243A10900D0F447 /* HatchImageButton.swift */; };
 		80F82C1C22353855008D579F /* Hatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F82C1A22353855008D579F /* Hatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B946D76389B56F1CAE22FF33 /* Pods_Hatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A973E183EFB4CA9B28183C /* Pods_Hatch.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		806A6A8A2236369200046178 /* HatchBench.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchBench.swift; sourceTree = "<group>"; };
 		806A6A8B2236369300046178 /* HatchLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchLabel.swift; sourceTree = "<group>"; };
 		806A6A8C2236369300046178 /* HatchUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchUIImageView.swift; sourceTree = "<group>"; };
+		80C4C3872243A10900D0F447 /* HatchImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatchImageButton.swift; sourceTree = "<group>"; };
 		80F82C1722353855008D579F /* Hatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F82C1A22353855008D579F /* Hatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hatch.h; sourceTree = "<group>"; };
 		80F82C1B22353855008D579F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				806A6A8A2236369200046178 /* HatchBench.swift */,
 				806A6A852236369200046178 /* HatchButton.swift */,
 				806A6A892236369200046178 /* HatchCloseMark.swift */,
+				80C4C3872243A10900D0F447 /* HatchImageButton.swift */,
 				806A6A872236369200046178 /* HatchConfigurator.swift */,
 				806A6A882236369200046178 /* HatchElementProtocol.swift */,
 				806A6A8B2236369300046178 /* HatchLabel.swift */,
@@ -213,6 +216,7 @@
 				806A6A922236369300046178 /* HatchBench.swift in Sources */,
 				806A6A942236369300046178 /* HatchUIImageView.swift in Sources */,
 				806A6A8D2236369300046178 /* HatchButton.swift in Sources */,
+				80C4C3882243A10900D0F447 /* HatchImageButton.swift in Sources */,
 				806A6A902236369300046178 /* HatchElementProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

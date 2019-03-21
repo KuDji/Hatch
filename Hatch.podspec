@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Hatch"
-  spec.version      = "1.0.10"
+  spec.version      = "1.0.11"
   spec.summary      = "Hatch custom alerts."
   spec.homepage     = "https://github.com/KuDji/Hatch"
   spec.description  = <<-DESC
